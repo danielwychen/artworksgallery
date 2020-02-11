@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, IE=edge" http-equiv="x-ua-compatible">
+		<title>The Art Works Gallery | Featured Art</title>
+		<link href='https://fonts.googleapis.com/css?family=EB Garamond' rel='stylesheet'>
+		<link href="https://fonts.googleapis.com/css?family=Quando" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Quattrocento" rel="stylesheet">
+		<link rel="stylesheet" href="stylesheet.css">
+		<link rel="stylesheet" href="flexslider.css">
+		<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+		<script src="jquery.flexslider.js"></script>
+			<script type="text/javascript" charset="utf-8">
+				$(window).load(function () {
+					$('.flexslider').flexslider();
+				});
+			</script>
+	</head>
+	
+	<body>
+		<div id="site-consistent">
+			<header>
+				<img id="logo" src="images/gallery_logo.png" alt="The Art Works Gallery | 64 Manchester Street, Christchurch">
+			</header>
+
+			<nav>
+				<ul>
+					<li><a href="index.html">Home</a></li>
+					<li><a href="about.html">About</a></li>
+					<li><a href="artist.html">Featured Artist</a></li>
+					<li><a href="art.html">Featured Art</a></li>
+					<li><a href="contact.html">Contact</a></li>
+					<li><a href="blog.html">Blog</a></li>
+				</ul>
+				
+				<form id="search" method="GET" action="/results.php">
+					<input id="search_bar" type="text" name="search" placeholder=" Search...">
+				</form>
+			</nav>
+		</div>
+		
+		<div id="page-specific">
+			<div id="section">
+				<div class="flexslider">
+					<ul class="slides">
+						<li>
+							<figure>
+								<img alt="Corridor (2001)" id="corridor" src="images/laurie_lipton/corridor_2001.jpg">
+								<figcaption id="caption">"Corridor" (2001)</figcaption>
+							</figure>
+						</li>
+						<li>
+							<figure>
+								<img alt="Time Travel" id="timetravel" src="images/laurie_lipton/time_travel.jpg">
+								<figcaption id="caption">"Time Travel"</figcaption>
+							</figure>
+						</li>
+						<li>
+							<figure>
+								<img alt="Mouthpiece (2017)" id="mouthpiece" src="images/laurie_lipton/mouthpiece_2017.jpg">
+								<figcaption id="caption">"Mouthpiece (2017)"</figcaption>
+							</figure>
+						</li>
+					</ul>
+				</div>
+			
+				<div id="excerpt">
+					<h3>Humor creeps in to Lipton's work and, fittingly, it is a creepy humor.</h3> 
+				
+					<p>Yet for all of their technical finesse and spatial expansiveness, Lipton's scenes can feel reductive, a bit like editorial cartoons. Lipton draws with an all-over deliberateness that invokes the homogeneity she satirizes, and in a way, suffers a bit from it too. There is a palatable, strangely bland beauty to these horrors. The drawings mesmerize, in part, because of this friction, but some deviation from the sameness would come as a relief and ratchet up the work's already haunting power.</p>
+				</div>
+			</div>
+		</div>
+		
+		<div id="site-consistent">
+			<footer>
+				<div id="left-page-end">
+					<p>&copy; 2017 Art Works Gallery. Except as provided by the Copyright Act 1994, no part of this publication may be reproduced or stored in a retrieval system in any form or by any means without the prior written permission of the copyright owner.</p>
+				</div>
+				
+				<div id="right-page-end">
+					<div id="row">
+						<a href="http://www.facebook.com/"><img id="fb" src="images/fb_logo58.png" alt="Facebook"></a>
+						<a href="https://plus.google.com/"><img id="google" src="images/google_plus_logo.png" alt="Google"></a>
+						<a href="https://twitter.com/?lang=en"><img id="twitter" src="images/twitter_logo.png" alt="Twitter"></a>
+					</div>
+				</div>
+			</footer>
+		</div>		
+	</body>
+</html>

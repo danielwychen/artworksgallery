@@ -1,0 +1,365 @@
+/* Can this build be first for mobile devices? */
+
+/* Remember that you will be marked for your comments, as well as your grouping of different elements in your HTML and stylesheet. */
+
+/* LAYOUT */
+
+aside {
+	display: flex;
+	flex-flow: column nowrap;
+	order: 1;
+	padding: 1em;
+	width: 90%;
+}
+
+body {
+	background: url("images/parchment-paper.jpg") no-repeat fixed center;
+	margin: 0 auto;
+}
+
+footer {
+	display: flex;
+	margin: 0 auto;
+	padding: 1em 0 0 1em;
+}
+
+header {
+	display: flex;
+}
+
+main {
+	display: flex;
+	flex-flow: row nowrap;
+	order: 2;
+	padding: 1em 0;
+}
+
+nav {
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: center;
+	margin: 0 auto;
+	padding: 1em;
+}
+
+@media only screen and (max-width: 35em) {
+	nav {
+		align-items: flex-start;
+		display: flex;
+		flex-flow: column wrap;
+		margin: 0 auto;
+		padding: 1em;
+	}
+}
+
+section {
+	display: flex;
+	flex-flow: column nowrap;
+	padding: 0.75em;
+	width: 90%;
+}
+
+#blog_details {
+	display: flex;
+	flex-flow: row nowrap;
+	justify-content: space-evenly;
+	min-width: 40%;
+	padding: 0.5em 1em;
+}
+
+#blog_details li {
+	padding: 0 1em;
+	flex: 0 1 auto;
+}
+
+#column {
+	align-content: center;
+	align-items: center;
+	display: flex;
+	flex-direction: column;
+	padding: 0 auto;
+}
+
+#contact {
+	align-items: center;
+	display: flex;
+	flex-flow: column nowrap;
+}
+
+#excerpt {	
+	display: flex;
+	flex-flow: column nowrap;
+	padding: 1em 1em;
+	width: 90%;
+}
+
+#feedback {
+	height: 256px;
+	width: 256px;
+}
+
+#form_element {
+	width: 256px;
+}
+
+#form_label {
+	padding: 1em 0;
+}
+
+#left-page-end {
+	justify-content: flex-start;
+	padding: 0 auto;
+}
+
+#page-specific {
+	background-color: #FFFFFF;
+	display: flex;
+	margin: 0 auto;
+	width: 95%;
+}
+
+#right-page-end {
+	justify-content: flex-end;
+	padding: 0 auto;
+}
+
+#row {
+	align-items: baseline;
+	display: flex;
+	padding: 1em;
+}
+
+#site-consistent {
+	background-color: #FFFFFF;
+	margin: 0 auto;
+	width: 95%;
+}
+
+#videoarea {
+	display: flex;
+	justify-content: center; 
+	padding: 0 0 0 2.5em;
+}
+
+/* TYPOGRAPHY */
+
+#blog_details li {
+	font-size: 0.75em;
+}
+
+figcaption {
+	text-align: center;
+}
+
+figcaption, p, #contact {
+	font-family: 'EB Garamond', Garamond, serif;
+}
+
+footer p, h3, nav, #blog_details li, #form_label {
+	font-family: 'Quando', 'Quattrocento', sans serif;
+}
+
+footer p {
+	font-size: 70%;
+}
+
+nav a, #blog_title, #blog_details a {
+	text-decoration: none;
+}
+
+#caption {
+	padding: 1em 0 0 0;
+}
+
+#blog_details li {
+	list-style-type: none;
+}
+
+/* NAVIGATION */
+
+nav li {
+	padding: 0 1em;
+}
+
+nav ul {
+	list-style-type: none;
+	justify-content: center;
+	display: flex;
+	order: 1;
+}
+
+#search {
+	margin: 1em;
+	order: 2;
+}
+
+#search_bar {
+	background-image: url('images/search_icon.svg');
+	background-repeat: no-repeat;
+	border: 1px solid #FFCF5E;
+	box-sizing: border-box;
+	padding: 0.75em 2.5em;
+}
+
+@media only screen and (min-width: 65.4em) {
+
+	#search_bar {
+		width: 52.5%;
+	}
+	
+	#search_bar:focus {
+		transition: width 0.5s ease-in-out;
+		width: 100%;
+	}
+}
+
+/* COLOR SCHEME */
+
+nav a, #blog_title {
+	color: #FFCF5E;
+}
+
+#blog_details  {
+	background-color: #FFCF5E;
+	color: #000000;
+}
+
+#blog_details a {
+	color: #FFFFFF;
+}
+
+
+/* IMAGES */
+
+#logo {
+	display: inline-block;
+	height: 70%;
+	padding: 1em;
+	width: 70%;
+}
+
+#fb {
+	padding: 0 0.35em 0.35em;
+	width: 100%;
+}
+
+#google {
+	padding: 0 0.25em 0.25em 0.95em;
+	width: 100%;
+}
+
+#twitter {
+	padding: 0 1em;
+	width: 25%;
+}
+
+#Cézanne {
+	align-self: center;
+	flex: 0 1 auto;
+	order: 1;
+	padding: 1em;
+	width: 100%;
+}
+
+#Sydney {
+	align-self: center;
+	flex: 0 1 auto;
+	order: 2;
+	padding: 1em;
+	width: 100%;
+}
+
+#Pottery {
+	align-self: center;
+	flex: 0 1 auto;
+	order: 3;
+	padding: 1em;
+	width: 100%;
+}
+
+#Vincent {
+	align-self: center;
+	flex: 0 1 auto;
+	order: 1;
+	padding: 1em;
+	width: 60%;
+}
+
+#Lipton {
+	align-self: center;
+	flex: 0 1 auto;
+	order: 2;
+	padding: 1em;
+	width: 40%;
+}
+
+#Mora {
+	align-self: center;
+	flex: 0 1 auto;
+	order: 3;
+	padding: 1em;
+	width: 40%;
+}
+
+#Drover {
+	align-self: center;
+	flex: 0 1 auto;
+	max-width: 95%;
+	min-width: 50%;
+	order: 1;
+}
+
+#McCahon {
+	align-self: center;
+	flex: 0 1 auto;
+	max-width: 95%;
+	min-width: 50%;
+	order: 2;
+}
+
+#corridor {
+	align-self: center;
+	flex: 0 1 auto;
+	max-width: 95%;
+	min-width: 50%;
+}
+
+#mouthpiece {
+	align-self: center;
+	flex: 0 1 auto;
+	max-width: 95%;
+	min-width: 50%;
+}
+
+#timetravel {
+	align-self: center;
+	flex: 0 1 auto;
+	max-width: 95%;
+	min-width: 50%;
+}
+
+#Aberhart {
+	flex: 0 1 auto;
+	float: left;
+	padding: 0 1em; 
+	width: 50%;
+}
+
+#Mix {
+	flex: 0 1 auto;
+	float: left;
+	padding: 0 1em 1em 0;
+}
+
+#Mix2 {
+	flex: 0 1 auto;
+	float: left;
+	padding: 0 1em 1em 0;
+}
+
+#Thangue {
+	flex: 0 1 auto;
+	float: left;
+	width: 40%;
+	padding: 0 1em;
+}
